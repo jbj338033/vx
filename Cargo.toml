@@ -1,0 +1,21 @@
+[package]
+name = "video-express"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.93"
+license = "MIT"
+description = "Simple ffmpeg wrapper for humans"
+repository = "https://github.com/jbj338033/vx"
+keywords = ["ffmpeg", "video", "gif", "cli"]
+categories = ["command-line-utilities", "multimedia::video"]
+
+[[bin]]
+name = "vx"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+indicatif = "0.17"
+anyhow = "1.0"
+thiserror = "2.0"
+ffmpeg-sidecar = "2.0"
